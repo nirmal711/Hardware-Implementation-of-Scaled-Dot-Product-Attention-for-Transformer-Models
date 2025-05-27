@@ -31,6 +31,7 @@ Final results are stored in Output SRAM
 2. Pipelined MAC Operation
 - Divided multiplication and accumulation into pipeline stages for improved clock speed
 3. FSM State Reduction via State Reuse
+- Reused FSM states across similar matrix multiplication steps to reduce control logic complexity and area
 
 ---
 
@@ -52,9 +53,9 @@ To run with UI (debug mode):
 ```bash
 make debug
 ```
-To run all grading tests (ECE 564 test suite):
+To run without UI:
 ```bash
-make grade-564
+make eval
 ```
 ### 3. Run Synthesis
 Go to the synthesis/ directory:
@@ -63,5 +64,5 @@ cd synthesis
 ```
 Run synthesis with specified clock period:
 ```bash
-make all CLOCK_PER=8.6
+make all CLOCK_PER=5.3
 ```
