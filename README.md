@@ -40,8 +40,8 @@ Final results are stored in Output SRAM
 ### 1. Unzip the Project
 
 ```bash
-unzip ECE564_Project.zip
-cd ECE564_Project
+unzip ece564_F24.zip
+cd ece564_F24
 ```
 ### 2. Run Simulation
 
